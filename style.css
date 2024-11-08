@@ -2,8 +2,14 @@ body {
     background-image: url('pictures/Blue\ Geometric\ Background\ Poster.png');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: border-box;
 }
-
+.content {
+    flex: 1;
+    padding: 20px;
+}
 h1 {
     color: white;
     font-size: 60pt;
@@ -136,11 +142,24 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: #333;
+    color: black;
     margin-bottom: 10px;
 }
 
 section p {
     font-size: 1.2em;
-    color: #555;
+    color: grey;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.social-links a {
+    color: greenyellow;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
