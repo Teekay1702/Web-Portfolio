@@ -19,6 +19,7 @@ p {
     font-size: 20pt;
     color: black;
     font-family: 'Times New Roman', Times, serif;
+    text-wrap: around;
 }
 
 .profile-picture {
@@ -83,21 +84,20 @@ button {
     margin: 0 auto;
 }
 
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navigation Bar Styling */
 .tab {
-    background-color: #333;  /* Dark background for navbar */
-    position: fixed;         /* Sticks the navbar to the top */
-    width: 100%;             /* Full-width navbar */
+    background-color: black;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;           /* Sits above other content */
+    z-index: 1000;
+    font-size: 24px;
 }
 
 .tabs ul {
@@ -113,7 +113,7 @@ button {
 
 .tabs ul li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
@@ -121,14 +121,15 @@ button {
 }
 
 .tab-bar ul li a:hover {
-    background-color: #4CAF50;  /* Changes color on hover */
+    background-color: white;
 }
 
-/* Content Sections Styling */
+
 section {
     padding: 100px 20px;
-    margin-top: 60px; /* Space for fixed nav */
-    max-width: 800px;
+    margin-top: 60px;
+    max-width: fit-content;
+    max-height: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
