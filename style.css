@@ -1,45 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    background-image: url('pictures/Blue\ Geometric\ Background\ Poster.png');
+    background-image: url('pictures/download.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     min-height: border-box;
 }
-.content {
-    flex: auto;
-    padding: 20px;
+
+header {
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
-h1 {
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.tabs {
+    display: flex;
+    gap: 35px;
+    font-size: 30px;
     color: white;
-    font-size: 60pt;
-    text-align: center;
+    font-weight: 100;
+    text-decoration: none;
+    transition: .3s;
+    justify-content: left;
 }
 
-h2 {
-    color: black;
-    font-size: 45pt;
-    line-height: 2%;
+.tabs a:hover {
+    color: aquamarine;
 }
 
-p {
-    font-size: 20pt;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    text-wrap: around;
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
 }
 
-.profile-picture {
-    display: block;
-    margin: 0 auto;
-    width: 200px;
-    height: 200px;
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 500;
+    color: white;
+}
+
+.home-content h2 {
+    margin: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+
+.home-content p {
+    margin: 10px;
+    font-size: 18px;
+    color: grey;
+}
+
+.home-img {
     border-radius: 50%;
-    object-fit: cover;
 }
 
-.image-container {
-    text-align: center;
+.home-img img {
+    width: 32vw;
+    box-shadow: 0 0 25px solid blue;
+    cursor: pointer;
+    border-radius: 5%;
+    transition: 0.2s linear;
+    margin-right: 60px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 150vh;
+}
+
+.profile-content h1 {
+    font-size: 56px;
+    font-weight: 500;
+    color: white;
+}
+
+.profile-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+}
+
+.profile-content p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: 3px solid blue;
+    font-size: 32px;
+    border-radius: 50%;
+    margin: 48px 24px 48px 0;
+    transition: 0.3s;
+    color: lightblue;
+}
+
+.social-icons a:hover {
+    color: black;
+    background-color: lightblue;
+    box-shadow: 0 0 25px lightblue;
+}
+
+.experience {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+.listing {
+    padding: 15px;
 }
 
 #contact {
@@ -70,68 +178,4 @@ button {
     border-radius: 4px;
     font-size: 1em;
     cursor: pointer;
-}
-
-#about {
-    padding: 60px 20px;
-    background-color: white;
-}
-
-#about h2 {
-    font-size: 2.5em;
-    color: grey;
-    text-align: center;
-}
-
-#about p {
-    font-size: 1.2em;
-    color: darkgrey;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.tab {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    font-size: 24px;
-}
-
-.tabs ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-.tabs ul li {
-    margin: 0 15px;
-}
-
-.tabs ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.tab-bar ul li a:hover {
-    background-color: white;
-}
-
-section p {
-    font-size: 1.2em;
-    color: grey;
 }
