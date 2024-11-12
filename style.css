@@ -94,10 +94,11 @@ header {
 }
 
 .profile {
+    position: absolute;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    height: 150vh;
+    height: 210vh;
 }
 
 .profile-content h1 {
@@ -146,8 +147,53 @@ header {
     color: grey;
 }
 
+.experience h3 {
+    color: white;
+}
+
 .listing {
     padding: 15px;
+}
+
+.education {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    text-decoration: aliceblue;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+td {
+    color: gray;
+}
+
+.certifications {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+.skills {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
 }
 
 #contact {
