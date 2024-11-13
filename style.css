@@ -261,3 +261,28 @@ button {
     font-size: 1em;
     cursor: pointer;
 }
+
+.project {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 40vh;
+}
+
+.project-content h1 {
+    font-size: 56px;
+    font-weight: 500;
+    color: white;
+}
+
+.project-content p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: grey;
+}
+
+.project-content h3 {
+    color: beige;
+    margin: 20px;
+}
