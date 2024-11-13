@@ -52,7 +52,8 @@ header {
 }
 
 .tabs a:hover {
-    color: aquamarine;
+    background-color: transparent;
+    box-shadow: 0 0 30px whitesmoke;
 }
 
 .tabs a {
@@ -285,4 +286,22 @@ button {
 .project-content h3 {
     color: beige;
     margin: 20px;
+}
+
+.cv-btn {
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cv-btn:hover {
+    color: black;
+    background-color: lightblue;
+    box-shadow: 0 0 25px lightblue;
 }
