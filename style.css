@@ -103,7 +103,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    height: 340vh;
+    height: 250vh;
 }
 
 .profile-content h1 {
@@ -232,7 +232,7 @@ td {
     color: white;
 }
 
-#contact h1{
+#contact h1 {
     font-size: 80px;
 }
 
@@ -325,4 +325,126 @@ center {
     color: white;
     font-style: italic;
     text-align: center;
+}
+
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2;
+    background-color: white;
+}
+
+.icon i {
+    font-size: 50px;
+    margin-bottom: 8px;
+}
+
+.icon p {
+    font-size: 16px;
+    color: red;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.office {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.softskills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.softskills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2;
+}
+
+.softskills img {
+    font-size: 50px;
+    width: 130%;
+}
+
+.softskills p {
+    font-size: 16px;
+    color: red;
+}
+
+.softskills:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+}
+
+.certification-card {
+    display: grid;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.certification-card:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.card-1::before {
+    background-image: url(pictures/Forage.png);
+}
+
+.card-2::before {
+    background-image: url(pictures/Forage.png);
+}
+
+.card-3::before {
+    background-image: url(pictures/Udemy\ New.png);
+}
+
+.card-4::before {
+    background-image: url(pictures/Cisco\ Systems.png);
 }
