@@ -7,5 +7,6 @@
         "newsapp",
         "Tokoloho",
         "wireframe"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
