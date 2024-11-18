@@ -103,7 +103,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    height: 250vh;
+    height: 350vh;
 }
 
 .profile-content h1 {
@@ -447,4 +447,34 @@ center {
 
 .card-4::before {
     background-image: url(pictures/Cisco\ Systems.png);
+}
+
+.qualification-card {
+    display: grid;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.qualification-card::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.qualification-card:hover {
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.qualification-card::before {
+    background-image: url(pictures/images.jpg);
 }
