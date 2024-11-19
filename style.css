@@ -99,11 +99,10 @@ header {
 }
 
 .about {
-    position: absolute;
+    height: 230vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    height: 350vh;
 }
 
 .about-content h1 {
@@ -255,11 +254,10 @@ button {
 }
 
 .project {
-    position: absolute;
+    height: 70vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    height: 110vh;
 }
 
 .project-content h1 {
