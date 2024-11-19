@@ -254,26 +254,26 @@ button {
 }
 
 .project {
-    height: 70vh;
+    
     display: flex;
-    align-items: center;
+    justify-content: center;
     padding: 0 10%;
 }
 
-.project-content h1 {
-    font-size: 56px;
-    font-weight: 500;
-    color: black;
+.project-img {
+    border-radius: 50%;
 }
 
-.project-content p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: grey;
+.project-img img {
+    width: 32vw;
+    height: 50vh;
+    cursor: pointer;
+    border-radius: 5%;
+    margin: 100px 100px;
 }
 
 .project-content h3 {
-    color: blueviolet;
+    color: black;
     margin: 20px;
 }
 
@@ -456,11 +456,11 @@ center {
 
 .project-card {
     display: grid;
-    width: 50%;
+    width: 100%;
     background-color: white;
     border-radius: 8px;
     position: relative;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 4px 6px black;
     margin: 10px;
     text-align: center;
