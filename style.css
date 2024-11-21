@@ -62,7 +62,7 @@ header {
 }
 
 .home {
-    height: 110vh;
+    
     display: flex;
     align-items: center;
     padding: 0 10%;
