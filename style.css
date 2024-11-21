@@ -259,11 +259,11 @@ button {
     padding: 0 10%;
 }
 
-#project-img {
+.project-img {
     border-radius: 50%;
 }
 
-#project-img img {
+.project-img img {
     width: 32vw;
     height: 50vh;
     cursor: pointer;
@@ -271,9 +271,10 @@ button {
     margin: 100px 100px;
 }
 
-#project-content h3 {
+.project-content h1 {
     color: black;
-    margin: 20px;
+    font-size: 56px;
+    margin: 30px;
 }
 
 .cv-btn {
