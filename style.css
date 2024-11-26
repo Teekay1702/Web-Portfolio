@@ -61,6 +61,18 @@ header {
     color: black;
 }
 
+.tabs.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 4px 8px black;
+    background-color: white;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -122,9 +134,17 @@ header {
     }
 
     .home-img {
-        width: 50vw;
+        display: flex;
+        justify-content: center;
+        width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .home-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5%;
     }
 
     .home-content h1 {
@@ -148,6 +168,7 @@ header {
         position: absolute;
         gap: 15px;
         top: 100%;
+        background-color: white;
         left: 0;
         width: 100%;
         padding: 10px 0;
@@ -193,6 +214,10 @@ header {
 @media screen and (max-width: 480px) {
     .home-img {
         width: 70vw;
+    }
+
+    .home-img img {
+        max-width: 80%;
     }
 
     .home-content h1 {
@@ -586,123 +611,3 @@ center {
     transform: scale(1.1);
     background-color: white;
 }
-/* 
-@media (max-width: 768px) {
-    body {
-        flex-direction: column;
-        padding: 0 5%;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tabs {
-        flex-direction: column;
-        gap: 15px;
-        font-size: 24px;
-    }
-
-    .tabs a {
-        font-size: 18px;
-    }
-
-    .home-content h1 {
-        font-size: 36px;
-    }
-
-    .home-content h2 {
-        font-size: 24px;
-    }
-
-    .home-content p {
-        font-size: 16px;
-    }
-
-    .home-img img {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    #about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #about-content h1 {
-        font-size: 40px;
-    }
-
-    .social-icons a {
-        width: 48px;
-        height: 48px;
-        font-size: 24px;
-        margin: 20px 40px;
-    }
-
-    .project-img img {
-        width: 90%;
-        margin: 20px 0;
-    }
-
-    .cv-btn {
-        font-size: 16px;
-        padding: 10px 16px;
-    }
-
-    .icon-container {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    }
-
-    .certification-card {
-        padding: 10px;
-        box-shadow: 0 2px 4px gray;
-    }
-
-    .project-card {
-        padding: 20px;
-        margin: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 1rem 2%;
-    }
-
-    .tabs {
-        font-size: 18px;
-        gap: 10px;
-    }
-
-    .home-content h1 {
-        font-size: 28px;
-    }
-
-    .home-content h2 {
-        font-size: 20px;
-    }
-
-    .social-icons a {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    .cv-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-
-    #contact h1 {
-        font-size: 36px;
-    }
-
-    .icon-container, .softskills-container {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    }
-    .icon p, .softskills p {
-        font-size: 14px;
-    }
-} */

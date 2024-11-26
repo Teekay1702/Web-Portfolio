@@ -15,17 +15,19 @@
 <body>
     <header>
         <a href="index.html" class="logo">Tokoloho Lekoro</a>
-        <nav class="tabs">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html">Project</a>
-            <a href="contact.html">Contact</a>
+        <nav>
+            <div class="tabs">
+                <a href="about.html">About</a>
+                <a href="project.html">Project</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
     </header>
 
     <section class="home">
@@ -59,15 +61,18 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener(DOMContentLoaded, () => {
+            const hamburger = document.querySelector(".hamburger");
+            const tabs = document.querySelector(".tabs");
+
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                tabs.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
-
-<!-- <script>
-    const hambuurger = document.querySelector('.hamburger');
-    const table = document.querySelector('.table');
-
-    hambuurger.addEventListener('click', () => {
-        table.classList.toggle('active');
-    })
-</script> -->
 
 </html>
