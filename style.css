@@ -208,7 +208,50 @@ header {
         margin-top: 20px;
         display: flex;
         justify-content: center;
-    }   
+    }
+
+    .project-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    .project-content h1 {
+        font-size: 36px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .project-card {
+        margin: 15px;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    #contact h1 {
+        font-size: 50px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    button  {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -235,6 +278,28 @@ header {
     .cv-btn {
         font-size: 14px;
         padding: 8px 15px;
+    }
+
+    #contact h1 {
+        font-size: 40px;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
     }
     
 }
