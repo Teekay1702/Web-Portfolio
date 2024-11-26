@@ -161,7 +161,7 @@ header {
         font-size: 16px;
         text-align: justify;
     }
-    
+
     .tabs {
         display: none;
         flex-direction: column;
@@ -253,13 +253,70 @@ header {
         font-size: 16px;
     }
 
-    input, textarea {
+    input,
+    textarea {
         font-size: 16px;
     }
 
-    button  {
+    button {
         font-size: 16px;
     }
+
+    #about {
+        padding: 1rem;
+    }
+
+    .about-content {
+        font-size: 1.8rem;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .icon-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 15px;
+    }
+
+    .icon i {
+        font-size: 40px;
+    }
+
+    .icon p {
+        font-size: 14px;
+    }
+
+    .softskills-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 15px;
+    }
+
+    .softskills img {
+        max-width: 80px;
+    }
+
+    /* .certification-card::before, .qualification-card::before {
+        width: 60px;
+        height: 60px;
+        top: 5px;
+        right: 5px;
+    } */
+
+    .qualification-card {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .qualification-card p {
+        margin: 6px 0;
+    }
+
 
 
 }
@@ -303,7 +360,8 @@ header {
         font-size: 14px;
     }
 
-    input, textarea {
+    input,
+    textarea {
         font-size: 14px;
         padding: 10px;
     }
@@ -311,20 +369,78 @@ header {
     button {
         font-size: 14px;
     }
-    
+
+    .about-content {
+        font-size: 1.5rem;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+    .icon-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .icon {
+        flex-direction: column;
+        padding: 15px;
+        width: auto;
+    }
+
+    .icon i {
+        font-size: 48px;
+    }
+
+    .icon p {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .softskills-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    /* .certification-card::before, .qualification-card::before {
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        right: 5px;
+    } */
+
+    .qualification-card {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .qualification-card p {
+        margin: 4px 0;
+    }
+
 }
 
 #about {
-    
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 2rem 5%;
+    flex-direction: column;
+}
+
+.about-content {
+    max-width: 800px;
+    text-align: center;
 }
 
 .about-content h1 {
     font-size: 56px;
     font-weight: 500;
     color: black;
+    margin-bottom: 1rem;
 }
 
 #about-content h2 {
@@ -379,7 +495,6 @@ header {
 
 table {
     width: 100%;
-    max-width: 800px;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -580,12 +695,13 @@ center {
     text-align: center;
     padding: 10px;
     border-radius: 8px;
-    transition: transform 0.2;
+    transition: transform 0.2s;
 }
 
 .softskills img {
     font-size: 50px;
     width: 130%;
+    max-width: 100px;
 }
 
 .softskills p {
@@ -599,12 +715,36 @@ center {
 }
 
 .certification-card {
-    display: grid;
+    /* display: grid;
     background-color: white;
     border-radius: 8px;
     position: relative;
     padding: 20px;
+    margin: auto;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px black; */
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
     box-shadow: 0 4px 6px black;
+}
+
+.certification-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.certification-card strong {
+    font-weight: bold;
+    color: grey;
 }
 
 .certification-card::before {
@@ -624,32 +764,55 @@ center {
     background-color: white;
 }
 
-.card-1::before {
+/* .card-1::before {
     background-image: url(pictures/Forage.png);
+    width: 80px;
+    height: 80px;
 }
 
 .card-2::before {
     background-image: url(pictures/Forage.png);
+    width: 80px;
+    height: 80px;
 }
 
 .card-3::before {
     background-image: url(pictures/Udemy\ New.png);
+    width: 80px;
+    height: 80px;
 }
 
 .card-4::before {
     background-image: url(pictures/Cisco\ Systems.png);
-}
+    width: 80px;
+    height: 80px;
+} */
 
 .qualification-card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: white;
     border-radius: 8px;
     position: relative;
     padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
     box-shadow: 0 4px 6px black;
 }
 
-.qualification-card::before {
+.qualification-card p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: black;
+}
+
+.qualification-card strong {
+    font-weight: bold;
+    color: grey;
+}
+
+/* .qualification-card::before {
     content: "";
     position: absolute;
     top: 10px;
@@ -659,16 +822,18 @@ center {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .qualification-card:hover {
     transform: scale(1.1);
     background-color: white;
 }
 
-.qualification-card::before {
+/* .qualification-card::before {
     background-image: url(pictures/images.jpg);
-}
+    width: 200px;
+    height: 120px;
+} */
 
 .project-card {
     display: grid;
