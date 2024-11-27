@@ -73,6 +73,9 @@ header {
     box-shadow: 0 4px 8px black;
     background-color: white;
     z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .hamburger {
