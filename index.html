@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -16,16 +17,16 @@
     <header>
         <a href="index.html" class="logo">Tokoloho Lekoro</a>
         <nav>
+            <div class="hamburger" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="tabs">
                 <a href="about.html">About</a>
                 <a href="project.html">Project</a>
                 <a href="contact.html">Contact</a>
-            </div>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </nav>
     </header>
@@ -62,17 +63,7 @@
         </div>
     </section>
 
-    <script>
-        document.addEventListener(DOMContentLoaded, () => {
-            const hamburger = document.querySelector(".hamburger");
-            const tabs = document.querySelector(".tabs");
-
-            hamburger.addEventListener("click", () => {
-                hamburger.classList.toggle("active");
-                tabs.classList.toggle("active");
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

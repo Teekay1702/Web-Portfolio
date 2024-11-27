@@ -162,36 +162,59 @@ header {
         text-align: justify;
     }
 
+    #menu-icon {
+        display: block;
+    }
+
     .tabs {
         display: none;
         flex-direction: column;
-        position: absolute;
-        gap: 15px;
-        top: 100%;
-        background-color: white;
+        position: fixed;
+        justify-content: center;
+        gap: 20px;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
         left: 0;
-        width: 100%;
+        width: 100vw;
+        height: 100vh;
         padding: 10px 0;
         box-shadow: 0 4px 8px black;
         font-size: 24px;
+        z-index: 9999;
+        padding: 0;
     }
 
     .tabs a {
         text-align: center;
-        font-size: 20px;
+        font-size: 24px;
         color: black;
-        padding: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 5px;
         box-shadow: 0 4px 8px black;
     }
 
     .tabs a:hover {
         background-color: lightblue;
-        box-shadow: none;
+        color: black;
         border-radius: 0;
     }
 
     .hamburger {
         display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 10px;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        border-radius: 5px;
+        transition: all 0.3s ease;
     }
 
     .tabs.active {
@@ -715,16 +738,8 @@ center {
 }
 
 .certification-card {
-    /* display: grid;
-    background-color: white;
-    border-radius: 8px;
-    position: relative;
-    padding: 20px;
-    margin: auto;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 6px black; */
-
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     width: 100%;
     background-color: white;
@@ -738,6 +753,8 @@ center {
 
 .certification-card p {
     margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
     font-size: 16px;
     color: black;
 }
@@ -764,29 +781,69 @@ center {
     background-color: white;
 }
 
-/* .card-1::before {
+.card-1::before {
     background-image: url(pictures/Forage.png);
+    content: "";
+    position: absolute;
     width: 80px;
     height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .card-2::before {
     background-image: url(pictures/Forage.png);
+    content: "";
+    position: absolute;
     width: 80px;
     height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .card-3::before {
     background-image: url(pictures/Udemy\ New.png);
-    width: 80px;
-    height: 80px;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .card-4::before {
     background-image: url(pictures/Cisco\ Systems.png);
+    content: "";
+    position: absolute;
     width: 80px;
     height: 80px;
-} */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
 
 .qualification-card {
     display: flex;
@@ -803,6 +860,8 @@ center {
 
 .qualification-card p {
     margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
     font-size: 16px;
     color: black;
 }
@@ -812,28 +871,26 @@ center {
     color: grey;
 }
 
-/* .qualification-card::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 200px;
-    height: 120px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
 .qualification-card:hover {
     transform: scale(1.1);
     background-color: white;
 }
 
-/* .qualification-card::before {
+.qualification-card::before {
     background-image: url(pictures/images.jpg);
-    width: 200px;
-    height: 120px;
-} */
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
 
 .project-card {
     display: grid;
