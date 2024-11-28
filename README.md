@@ -1,7 +1,7 @@
 # Portfolio Website
 
 ## **Overview**
-This is a personal portfolio website showcasing my skills, projects, and professional journey. The site is designed to provide an interactive and visually appealing experience for visitors, highlighting my expertise in software development and cybersecurity.
+This is a personal portfolio website showcasing my skills, projects, and professional journey. The site is designed to provide an interactive and visually appealing experience for visitors, highlighting my expertise in software development.
 
 ## **Features**
 - **About Me**: A section introducing who I am, my background, and my goals.
@@ -11,7 +11,7 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - **Responsive Design**: Optimized for viewing on desktop, tablet, and currently working on my portfolio to be mobile friendly.
 
 ## **Technologies Used**
-- **Frontend**: HTML, CSS.
+- **Frontend**: HTML, CSS, Javascript
 - **Backend**: 
 - **Additional Tools**: Visual Studio Code,and GitHub for version control.
 
@@ -20,5 +20,12 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - A modern web browser.
 - Optionally, a local web server to run the project VS Code Live Server.
 
-Please click on the link to view my portfolio. https://nhlamulokhoza02.github.io/ProfessionalPortfolio/
+Please click on the link to view my portfolio. https://teekay1702.github.io/Web-Portfolio/
 
+## **Installation**## 
+
+Follow these steps to get WeatherApp running locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Teekay1702/Web-Portfolio
