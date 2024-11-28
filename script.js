@@ -11,4 +11,4 @@ closebtn.addEventListener('click', () => {
     tabs.classList.toggle('active');
 });
 
-typeWriter();
+
