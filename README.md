@@ -20,12 +20,20 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - A modern web browser.
 - Optionally, a local web server to run the project VS Code Live Server.
 
-Please click on the link to view my portfolio. https://teekay1702.github.io/Web-Portfolio/
+## **Projects**
 
-## **Installation**## 
+- Teekay's travel Tips: This website shows the places I have been too and all my experiences at that place.
+- Survey Form: This is a survey form you can take to rate your workplace.
+- Chocolate Cupcakes recipe: This a recipe for Chocolate Cupcakes recipe and it also has a link for the gluten free version.
+- Movie theatre: This is a site where you can see the information of some of the best movies ever released and their trailers.
+- Business card: This is a site to view my business.
+  
+## **Installation**
 
 Follow these steps to get WeatherApp running locally:
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Teekay1702/Web-Portfolio
+
+Please click on the link to view my portfolio. https://teekay1702.github.io/Web-Portfolio/
