@@ -915,7 +915,6 @@ center {
 .btn {
     display: inline-block;
     padding: 20px;
-    width: 50px;
     background-color: grey;
     color: white;
     text-decoration: none;
@@ -941,5 +940,3 @@ footer p {
     font-size: 16px;
     font-weight: bold;
 }
-
-
