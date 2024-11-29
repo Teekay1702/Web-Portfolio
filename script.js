@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
             " Who are you ": "I am Tokoloho Lekoro. A Software Developer.",
             " What do you do ": "I specialize in building Mobile and Web applications",
             " What is your tech stack ": "At the moment I specialize in C#, Flutter and Dart",
-            " Industry Exprience ": "I am still learning and gaining experience.",
+            " Industry Experience ": "I am still learning and gaining experience.",
             " How can i contact you ": "You can contact me via email, phone, or LinkedIn."
         };
 
@@ -117,6 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chatbot.style.display = "block";
         chatIcon.style.display = "none";
         startChat();
+        
     });
 
     // Event listener for closing the chat
