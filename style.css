@@ -984,7 +984,6 @@ footer p {
     animation: fadeInUp 0.5s ease forwards;
     font-family: 'Inter', sans-serif;
     height: auto;
-    /* display: flex; */
     flex-direction: column;
 }
 
