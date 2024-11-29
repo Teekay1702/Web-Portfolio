@@ -302,7 +302,7 @@ header {
     }
 
     .softskills {
-        flex-basis: calc(25%  - 20px);
+        flex-basis: calc(25% - 20px);
     }
 
     .qualification-card {
@@ -378,6 +378,7 @@ header {
     .about-content p {
         font-size: 14px;
     }
+
     .icon-container {
         flex-direction: column;
         align-items: center;
@@ -894,7 +895,7 @@ center {
 .project-content h1 {
     color: black;
     font-size: 56px;
-    
+
     text-align: center;
     margin: 30px;
 }
@@ -932,7 +933,7 @@ footer {
     opacity: 0.5;
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 footer p {
@@ -941,8 +942,161 @@ footer p {
     font-weight: bold;
 }
 
-.chatbot-toggle {
+/* Chat icon */
+#chatboxIcon {
+    width: 60px;
     position: fixed;
-    bottom: 20px;
-    
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 120px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#chatIcon:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+/* Chatbot window */
+#bot {
+    width: 320px;
+    height: 500px;
+    background-color: #f9f9f9;
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    animation: fadeInUp 0.5s ease forwards;
+    font-family: 'Inter', sans-serif;
+    height: auto;
+    flex-direction: column;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Chatbox (where messages appear) */
+#chatbox {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    max-height: 500px;
+}
+
+/* User message styling */
+.user-message {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    align-self: flex-end;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Bot message styling */
+.bot-message {
+    color: #333;
+    background-color: lightgreen;
+    padding: 10px 15px;
+    border-radius: 15px 15px 15px 0;
+    margin-bottom: 10px;
+    max-width: 80%;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Chat options - scrollable area */
+#chat-options {
+    padding: 10px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    overflow-y: auto;
+    max-height: 90px;
+    margin-bottom: 0;
+}
+
+/* Chat option buttons */
+#chat-options button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#chat-options button:hover {
+    background-color: black;
+}
+
+/* Fixed footer for buttons */
+#chatbot-footer {
+    background-color: #f9f9f9;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+    margin: 0;
+    height: auto;
+}
+
+/* Styling for clear and close buttons */
+#menu,
+#close {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: 13px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#chat-closer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #f9f9f9;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    flex-shrink: 0;
+    height: auto;
 }
