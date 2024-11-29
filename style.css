@@ -940,3 +940,9 @@ footer p {
     font-size: 16px;
     font-weight: bold;
 }
+
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    
+}
