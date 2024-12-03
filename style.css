@@ -942,14 +942,12 @@ footer p {
     font-weight: bold;
 }
 
-/* Chat icon */
 #chatboxIcon {
     width: 60px;
     position: fixed;
     height: 60px;
     background-color: yellow;
     border-radius: 50%;
-    position: fixed;
     bottom: 120px;
     right: 60px;
     display: flex;
@@ -959,7 +957,12 @@ footer p {
     color: black;
     font-size: 28px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.3s ease, 0.3s ease;
+    z-index: 1000;
+}
+
+#chatboxIcon:active {
+    transform: scale(0.95);
 }
 
 #chatIcon:hover {
@@ -967,10 +970,8 @@ footer p {
     background-color: #0056b3;
 }
 
-/* Chatbot window */
 #bot {
     width: 320px;
-    height: 500px;
     background-color: #f9f9f9;
     position: fixed;
     bottom: 80px;
@@ -979,12 +980,12 @@ footer p {
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     display: none;
-    flex-direction: column;
     overflow: hidden;
     animation: fadeInUp 0.5s ease forwards;
     font-family: 'Inter', sans-serif;
     height: auto;
     flex-direction: column;
+    z-index: 999;
 }
 
 @keyframes fadeInUp {
