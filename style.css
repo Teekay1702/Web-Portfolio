@@ -828,7 +828,6 @@ center {
 }
 
 .card-1::before {
-    background-image: url(pictures/Forage.png);
     content: "";
     position: absolute;
     width: 80px;
@@ -844,7 +843,6 @@ center {
 }
 
 .card-2::before {
-    background-image: url(pictures/Forage.png);
     content: "";
     position: absolute;
     width: 80px;
@@ -860,7 +858,6 @@ center {
 }
 
 .card-3::before {
-    background-image: url(pictures/Udemy\ New.png);
     content: "";
     position: absolute;
     width: 100px;
@@ -876,7 +873,6 @@ center {
 }
 
 .card-4::before {
-    background-image: url(pictures/Cisco\ Systems.png);
     content: "";
     position: absolute;
     width: 80px;
@@ -923,7 +919,6 @@ center {
 }
 
 .qualification-card::before {
-    background-image: url(pictures/images.jpg);
     content: "";
     position: absolute;
     width: 80px;
