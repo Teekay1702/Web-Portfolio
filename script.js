@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeChatButton = document.getElementById("close");
     const clearChatButton = document.getElementById("menu");
 
-    // Function to simulate typing animation
     function typeWriter(text, isUserMessage, callback) {
         let index = 0;
         const typingSpeed = 60;
@@ -90,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Event listener for the chat icon
     chatboxIcon.addEventListener("click", function () {
         chatbot.style.display = "block";
         chatboxIcon.style.display = "none";
@@ -99,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function startChat() {
-        chatboxIcon.innerHTML = ""; // Clear previous messages when starting chat
+        chatboxIcon.innerHTML = "";
         displayMessage("Hello, This is Maverick. How can I help you?", false, function () {
             showOptions([
                 { text: "Who are you ", response: "I am Tokoloho Lekoro. A Software Developer." },
@@ -120,20 +118,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Event listener for closing the chat
+    
     closeChatButton.addEventListener("click", function () {
         chatbot.style.display = "none";
         chatboxIcon.style.display = "block";
-        chatbox.innerHTML = ""; // Clear chat messages for the next session
+        chatbox.innerHTML = "";
     });
 
-    // Event listener for clearing the chat
+    
     clearChatButton.addEventListener("click", function () {
-        chatbox.innerHTML = ""; // Only clear chat messages without closing
-        startChat(); // Show the initial question set again
+        chatbox.innerHTML = "";
+        startChat();
     });
 
-    // Event listener for handling user questions (typing or other input)
+    
     document.addEventListener("keydown", function (event) {
         if (event.key === "Enter" && chatOptions.children.length === 0) {
             const userQuestion = chatbox.lastElementChild.textContent.replace("You: ", "").trim();
