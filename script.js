@@ -90,8 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Event listener for the chat icon
+    chatboxIcon.addEventListener("click", function () {
+        chatbot.style.display = "block";
+        chatboxIcon.style.display = "none";
+        startChat();
+        
+    });
+
     function startChat() {
-        chatbox.innerHTML = ""; // Clear previous messages when starting chat
+        chatboxIcon.innerHTML = ""; // Clear previous messages when starting chat
         displayMessage("Hello, This is Maverick. How can I help you?", false, function () {
             showOptions([
                 { text: "Who are you ", response: "I am Tokoloho Lekoro. A Software Developer." },
@@ -111,14 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
             ]);
         });
     }
-
-    // Event listener for the chat icon
-    chatboxIcon.addEventListener("click", function () {
-        chatbot.style.display = "block";
-        chatIcon.style.display = "none";
-        startChat();
-        
-    });
 
     // Event listener for closing the chat
     closeChatButton.addEventListener("click", function () {
