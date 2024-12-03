@@ -1031,6 +1031,10 @@ footer p {
     border-radius: 50%;
     bottom: 120px;
     right: 60px;
+    background-image: url(pictures/message.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
