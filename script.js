@@ -74,10 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function processUserQuestion(inputText) {
         const recognizedOptions = {
-            " Who are you ": "I am Tokoloho Lekoro. A Software Developer.",
-            " What do you do ": "I specialize in building Mobile and Web applications",
-            " What is your tech stack ": "At the moment I specialize in C#, Flutter and Dart",
-            " Industry Experience ": "I am still learning and gaining experience.",
+            " Who is the owner of the web-portfolio? ": "He is Tokoloho Lekoro. A Software Developer.",
+            " What does he do? ": "He specializes in building Mobile and Web applications",
+            " What is his specialty? ": "He specializes in C#, Flutter, Dart, HTML, CSS and JavaScript.",
+            " Industry Experience ": "He is still learning and gaining experience.",
             " How can i contact you ": "You can contact me via email, phone, or LinkedIn."
         };
 
@@ -100,10 +100,10 @@ document.addEventListener("DOMContentLoaded", function () {
         chatboxIcon.innerHTML = "";
         displayMessage("Hello, This is Maverick. How can I help you?", false, function () {
             showOptions([
-                { text: "Who are you ", response: "I am Tokoloho Lekoro. A Software Developer." },
-                { text: "What do you do ", response: "I specialize in building Mobile and Web applications." },
-                { text: "What do you specialize in ", response: "At the moment I specialize in C#, Flutter and Dart." },
-                { text: "Industry Experience ", response: "I am still learning and gaining experience." },
+                { text: "Who is the owner of the web-portfolio? ", response: "He is Tokoloho Lekoro. A Software Developer." },
+                { text: "What does he do?", response: "He specializes in building Mobile and Web applications" },
+                { text: "What is his specialty? ", response: "He specializes in C#, Flutter, Dart, HTML, CSS and JavaScript." },
+                { text: "Industry Experience ", response: "He is still learning and gaining experience." },
                 {
                     text: "How can I contact you?",
                     response: "How would you like to contact me?",
