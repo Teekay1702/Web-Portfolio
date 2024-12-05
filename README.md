@@ -13,7 +13,6 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 
 ## **Technologies Used**
 - **Frontend**: HTML, CSS, Javascript
-- **Backend**: 
 - **Additional Tools**: Visual Studio Code,and GitHub for version control.
 
 ## **Getting Started**
