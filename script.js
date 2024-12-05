@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     followUp: [
                         { text: "Email", response: "You can contact him via email: tokoloho57@gmail.com." },
                         { text: "Personal Number", response: "You can contact him via Phone Number: 0849992284." },
-                        { text: "LinkedIn", response: "You can reach him on LinkedIn: Tokoloho Lekoro." }
+                        
                     ]
                     
                 },
