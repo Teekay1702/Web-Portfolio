@@ -9,6 +9,7 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - **Skills**: Highlights my technical skills and proficiencies.
 - **Contact**: A form or direct links to connect with me via email or social media platforms.
 - **Responsive Design**: Optimized for viewing on desktop, tablet, and currently working on my portfolio to be mobile friendly.
+- **Chatbot**: Added chatbot for further questions and inquires.
 
 ## **Technologies Used**
 - **Frontend**: HTML, CSS, Javascript
