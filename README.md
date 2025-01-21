@@ -28,7 +28,7 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - Movie theatre: This is a site where you can see the information of some of the best movies ever released and their trailers.
 - Business card: This is a site to view my business.
   
-## **Installation**
+## **Clone repository**
 
 Follow these steps to get WeatherApp running locally:
 
