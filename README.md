@@ -9,11 +9,11 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - **Skills**: Highlights my technical skills and proficiencies.
 - **Contact**: A form or direct links to connect with me via email or social media platforms.
 - **Responsive Design**: Optimized for viewing on desktop, tablet, and currently working on my portfolio to be mobile friendly.
-- **Chatbot**: Added chatbot for further questions and inquires.
+- **Chatbot**: Added chatbot for further questions and enquires.
 
 ## **Technologies Used**
 - **Frontend**: HTML, CSS, Javascript
-- **Additional Tools**: Visual Studio Code,and GitHub for version control.
+- **Additional Tools**: Visual Studio Code, and GitHub for version control.
 
 ## **Getting Started**
 ### Prerequisites
@@ -29,8 +29,6 @@ This is a personal portfolio website showcasing my skills, projects, and profess
 - Business card: This is a site to view my business.
   
 ## **Clone repository**
-
-Follow these steps to get WeatherApp running locally:
 
 1. Clone the repository:
    ```bash
