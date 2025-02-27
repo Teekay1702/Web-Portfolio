@@ -25,18 +25,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeChatButton = document.getElementById("close");
     const clearChatButton = document.getElementById("menu");
 
-    function typeWriter(text, isUserMessage, callback) {
-        let index = 0;
-        const typingSpeed = 60;
+    function displayMessage(message, isUserMessage = false, callback) {
         const p = document.createElement("p");
-
         p.classList.add(isUserMessage ? "user-message" : "bot-message");
+
         chatbox.appendChild(p);
         chatbox.scrollTop = chatbox.scrollHeight;
 
+        if (message.includes("<a")) {
+            p.innerHTML = message;
+            if (callback) setTimeout(callback, 500);
+        } else {
+            typeWriter(message, p, callback);
+        }
+    }
+
+    function typeWriter(text, element, callback) {
+        let index = 0;
+        const typingSpeed = 60;
+
         function type() {
             if (index < text.length) {
-                p.textContent += text.charAt(index);
+                element.textContent += text.charAt(index);
                 index++;
                 setTimeout(type, typingSpeed);
             } else if (callback) {
@@ -44,10 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
         type();
-    }
-
-    function displayMessage(message, isUserMessage = false, callback) {
-        typeWriter(message, isUserMessage, callback);
     }
 
     function showOptions(options) {
@@ -93,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chatbot.style.display = "block";
         chatboxIcon.style.display = "none";
         startChat();
-        
+
     });
 
     function startChat() {
@@ -108,30 +114,30 @@ document.addEventListener("DOMContentLoaded", function () {
                     text: "How can I contact you?",
                     response: "How would you like to contact me?",
                     followUp: [
-                        { text: "Email", response: "You can contact him via email: tokoloho57@gmail.com." },
+                        { text: "Email", response: `You can contact him via email: <a href="mailto:tokoloho57@gmail.com">tokoloho57@gmail.com</a>.` },
                         { text: "Personal Number", response: "You can contact him via Phone Number: 0849992284." },
-                        
+
                     ]
-                    
+
                 },
             ]);
         });
     }
 
-    
+
     closeChatButton.addEventListener("click", function () {
         chatbot.style.display = "none";
         chatboxIcon.style.display = "block";
         chatbox.innerHTML = "";
     });
 
-    
+
     clearChatButton.addEventListener("click", function () {
         chatbox.innerHTML = "";
         startChat();
     });
 
-    
+
     document.addEventListener("keydown", function (event) {
         if (event.key === "Enter" && chatOptions.children.length === 0) {
             const userQuestion = chatbox.lastElementChild.textContent.replace("You: ", "").trim();
